@@ -1,0 +1,65 @@
+%% $Id: busplan.tex,v 1.2 2000/05/09 16:56:03 matt Exp $
+\documentclass[a4paper,11pt]{report}
+
+%\usepackage{html}
+\usepackage{epsfig}
+\usepackage{parskip}
+\usepackage{supertabular}
+
+\pagestyle{headings}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+  University of Bristol - Department of Computer Science \\
+  \vskip .3cm
+  \hrule
+%\begin{htmlonly}
+%  \vspace*{0.5cm}
+%  \htmladdimg[ALIGN=CENTER]{http://www.cs.bris.ac.uk/.logo.png}
+%  \vspace*{1cm}
+%\end{htmlonly}
+%\begin{latexonly}
+  \vspace*{4.5cm}
+%\end{latexonly}
+  {\LARGE COMS40110 - Individual Project}\\
+  \vskip .5cm
+  {\Large Business Plan}
+  \vskip 1cm
+  \rule{4cm}{0.1mm}\\
+  \vskip .75cm
+  {\Large Full-text searchable mailing list archive} \\
+  \vskip .25cm
+  \today \\
+  \vskip .75cm
+  \rule{4cm}{0.1mm}\\
+\vskip 1cm
+  Matthew HAMILTON\\
+  \vskip 1.5cm
+\end{center}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\chapter{The Business and Its Management}
+\input{business}
+
+\chapter{Products}
+\input{products}
+
+\chapter{Market and Competitors}
+\input{market}
+
+\chapter{Competetive Business Strategy}
+\input{strategy}
+
+\chapter{Forcasts and Financial Data}
+\input{finance}
+
+\bibliographystyle{plain}
+\bibliography{../thesis/report}
+
+
+\end{document}

@@ -1,0 +1,75 @@
+%% $Id: maintman.tex,v 1.3 2000/05/14 23:09:32 matt Exp $
+
+\chapter{Maintenance Guide}
+The code for this project has evolved in many different directions.  Many different approaches were tried and by using source control the project remained manageable.
+
+\section{Source Control}
+The entire source for the project is kept under revision control using Concurrent Versioning System (CVS).  This system allows multiple users controlled access to a set of cental source files.  It's main feature is that it keeps different revisions of a file, so at any time a previous version of the code can be checked out.
+
+One of the main reasons for using source control, is that there are external parties needing to keep track of what happens with this project.  The final web pages will be designed by one of the other members of Etherworks, and once the project is finished other members of Etherworks will be working on bringing the project to life as a full commercial site.  
+Hence they all need to be kept in the loop as to what was happening with the development.  The CVS system was set to email the commit log, entered whenever a revision was committed to the repository, to all of the members of Etherworks.
+
+Not only is the code kept in the CVS repository, but also this documentation, and many of the research papers referenced here.
+
+The code is available via anonymous CVS to others wishing to download it.  To do this under unix you need to first set the CVSROOT variable:
+
+\begin{verbatim}
+% setenv CVSROOT :pserver:anon@beta.osdigger.com:/home/cvs
+\end{verbatim}
+
+The login (there is no password, just hit return):
+
+\begin{verbatim}
+% cvs login
+\end{verbatim}
+
+Then checkout the sources:
+
+\begin{verbatim}
+% cvs -z3 checkout indexer scripts servlets
+\end{verbatim}
+
+
+There is also a CVSweb interface to the CVS repository allowing access to the various revisions and the commit logs via a web browser.  This can be found from the project page at:
+
+\texttt{http://beta.osdigger.com/osdigger}
+
+\section{Makefiles}
+Makefiles aid the compilation of programs as they can check the dependencies and avoid having to recompile all of the sources for each change.  There are makefiles for the C code and for the documentation.
+
+\subsection{Documentation}
+This documentation can be compiled into various forms from the \texttt{thesis} directory.
+
+\begin{tabular}{l|p{8cm}}
+\emph{Command} & \emph{Description} \\
+\hline
+\texttt{make thesis.dvi} & Compiles a DVI version of the thesis \\
+\texttt{make thesis.ps}  & Compiles a Postscript version of the thesis \\
+\texttt{make thesis.pdf} & Compiles a PDF version of the thesis \\
+\texttt{make html} &  Converts the thesis to HTML using latex2html \\
+\end{tabular}
+
+\subsection{Indexer}
+
+The Indexer, Inverter and Query server can be compiled using the makefile from the \texttt{indexer} directory.
+
+\begin{tabular}{l|p{8cm}}
+\emph{Command} & \emph{Description} \\
+\hline
+\texttt{make indexer}  & Compiles the indexer \\
+\texttt{make inverter} & Compiles the inverter \\
+\texttt{make search}   & Compiles the query server \\
+\end{tabular}
+
+
+
+\section{Portability}
+The code has been mostly written on FreeBSD, a freely available Unix.  This is the platform that the OSDigger server runs.  The compression routines used in the code do not convert the data to any specific byte order, so although the code may run on other platforms, the indexes produced cannot be read on platforms with a different byte order.
+
+The java servlets used for the web interface to the indexes, being written in java, are cross platform.  The servlets do not have to run on the same machine as the index server or the database server.
+
+The system requires quite a few third party modules and libraries installed at run-time in order to work, however since this system is intended for use as a service, rather than being installed on hundreds or thousands of users PCs, this is not considered a problem.
+
+% LocalWords:  Versioning CVS OSDigger java servlets dvi ps pdf html CVSweb com
+% LocalWords:  http osdigger download unix CVSROOT setenv pserver cvs
+% LocalWords:  LocalWords

@@ -1,0 +1,308 @@
+\begin{thebibliography}{10}
+
+\bibitem{www:adforce}
+Adforce.
+\newblock http://www.adforce.com.
+
+\bibitem{BasRib}
+Ricardo Baeza-Yates and Berthier Ribeiro-Neto.
+\newblock {\em Modern Information Retrieval}.
+\newblock Addison Wesley Longman, 1999.
+
+\bibitem{www:bec}
+{B}ristol {E}nterprise {C}entre.
+\newblock http://www.bris.ac.uk/enterprise.
+
+\bibitem{bentley76}
+J.~Bentley and A.~Yao.
+\newblock An almost optimal algorithm for unbounded searching, 1976.
+
+\bibitem{www:berkeleydb}
+The sleepycat software home page.
+\newblock http://www.sleepycat.com.
+
+\bibitem{bookstein92model}
+A.~Bookstein, S.~Klein, and T.~Raita.
+\newblock Model based concordance compression, 1992.
+
+\bibitem{Brin+Page+1998a}
+Sergey Brin and Lawrence Page.
+\newblock The anatomy of a large-scale hypertextual web search engine.
+\newblock In {\em Proc. 7th Int. World Wide Web Conf.}, 14--18~April 1998.
+
+\bibitem{vldb:BCC94}
+Eric~W. Brown, James~P. Callan, and W.~Bruce Croft.
+\newblock {Fast Incremental Indexing for Full-Text Information Retrieval}.
+\newblock In {\em Proceedings of the Twentieth International Conference on Very
+  Large Databases}, pages 192--202, Santiago, Chile, 1994.
+
+\bibitem{ncstrl.umassa_cs//UM-CS-1993-067}
+Eric~W. Brown, James~P. Callan, W.~Bruce Croft, and J.~E.~B. Moss.
+\newblock Supporting full-text information retrieval with a persistent object
+  store.
+\newblock Technical Report UM-CS-1993-067, University of Massachusetts,
+  Amherst, Computer Science, August, 1993.
+
+\bibitem{RFC0822}
+D.~Crocker.
+\newblock {RFC 822}: Standard for the format of {ARPA Internet} text messages,
+  August 1982.
+
+\bibitem{Croft88}
+W.~Bruce Croft and Pasquale Savino.
+\newblock Implementing ranking strategies using text signatures.
+\newblock {\em ACM Transactions on Office Information Systems}, 6(1):42--62,
+  1988.
+
+\bibitem{edleno98:comppatmat}
+Edleno~S. de~Moura, Gonzalo Navarro, and Ricardo Baeza-Yates Nivio~Ziviani.
+\newblock Compressed pattern matching, approximate compressed pattern matching,
+  direct compressed pattern matching.
+\newblock 1998.
+
+\bibitem{www:doubleclick}
+Double{C}lick.
+\newblock http://www.doubleclick.com.
+
+\bibitem{elias75universal}
+P.~Elias.
+\newblock Universal codeword sets and the representation of the integers, 1975.
+
+\bibitem{frakes-stemming}
+W.~Frakes and R.~Baeza-Yates.
+\newblock Stemming algorithms.
+
+\bibitem{francis82}
+W.~Francis and H.~Kucera.
+\newblock Frequency analysis of english usage: Lexicon and grammar, 1982.
+
+\bibitem{RFC2045}
+N.~Freed and N.~Borenstein.
+\newblock {RFC 2045}: {Multipurpose Internet Mail Extensions} ({MIME}) part
+  one: Format of {Internet} message bodies, November 1996.
+
+\bibitem{RFC2046}
+N.~Freed and N.~Borenstein.
+\newblock {RFC 2046}: {Multipurpose Internet Mail Extensions} ({MIME}) part
+  two: Media types, November 1996.
+
+\bibitem{fuhr92}
+N.~Fuhr.
+\newblock Probabilistic models in information retrieval, 1992.
+
+\bibitem{fung95}
+R.~Fung and B.~Favero.
+\newblock Applying bayesian networks to information retrieval, 1995.
+
+\bibitem{furnas88}
+G.~Furnas, S.~Deerwester, S.~Dumais, T.~Landauer, R.~Harshman, L.~Streeter, and
+  K.~Lochbaum.
+\newblock Information retrieval using a singular value decomposition model of
+  latent semantic structure, 1988.
+
+\bibitem{gallager75optimal}
+R.~Gallager and D.~Van Voorhis.
+\newblock Optimal source codes for geometrically distributed integer alphabets,
+  1975.
+
+\bibitem{gasieniec99:optlzwpat}
+Leszek Gasieniec and Wojciech Rytter.
+\newblock Almost optimal fully lzw-compressed pattern matching.
+\newblock 1999.
+
+\bibitem{golomb66}
+S.~Golomb.
+\newblock Run-length encodings, 1966.
+
+\bibitem{www:goods}
+Generic object oriented database system (goods) and persistent object storage
+  for c++ (post++).
+\newblock http://www.ispras.ru/~knizhnik.
+
+\bibitem{www:googprog}
+Google affiliate programs.
+\newblock http://www.google.com/websearch\_programs.html.
+
+\bibitem{heaps78}
+H.~S. Heaps.
+\newblock {\em Information Retrieval: Computational and Theoretical Aspects}.
+\newblock Academic Press, New York, 1978.
+
+\bibitem{hull94}
+D.~Hull.
+\newblock Improving text retrieval for the routing problem using latent
+  semantic indexing, 1994.
+
+\bibitem{wmb:mg}
+Timothy C.~Bell Ian H.~Witten, Alistair~Moffat.
+\newblock {\em Managing Gigabytes: Compressing and Indexing Documents and
+  Images}.
+\newblock Morgan Kaufmann Publishers, Inc., second edition, 1999.
+
+\bibitem{www:lcp}
+{T}he {L}inux {C}ounter {P}roject.
+\newblock http://counter.li.org.
+
+\bibitem{lovins68}
+J.~Lovins and o~algorithm.
+\newblock Mechanical translation and computational linguistics, 1968.
+
+\bibitem{moffat92param}
+A.~Moffat and J.~Zobel.
+\newblock Parameterised compression for sparse bitmaps, 1992.
+
+\bibitem{RFC2047}
+K.~Moore.
+\newblock {RFC 2047}: {MIME} ({Multipurpose Internet Mail Extensions}) part
+  three: Message header extensions for non-{ASCII} text, November 1996.
+
+\bibitem{Moss:1990:DMP}
+J.~Eliot~B. Moss.
+\newblock Design of the {Mneme} persistent object store.
+\newblock {\em ACM Transactions on Information Systems}, 8(2):103--139, April
+  1990.
+
+\bibitem{navraf99:patzif}
+Gonzallo Navarro and Mathaeu Raffinot.
+\newblock A general practical approach to pattern matching over ziv-lempel
+  compressed text.
+\newblock 1999.
+
+\bibitem{www:netcraft}
+{N}etcraft {W}eb {S}erver {S}urvey.
+\newblock http://www.netcraft.com/survey/.
+
+\bibitem{www:nzdl}
+{N}ew {Z}ealand {D}igital {L}ibrary.
+\newblock http://www.nzdl.org.
+
+\bibitem{olson99}
+M.~Olson, K.~Bostic, and M.~Seltzer.
+\newblock Berkeley db, 1999.
+
+\bibitem{www:opensource}
+{The Open Source Definition}.
+\newblock http://www.opensource.org/osd.html.
+
+\bibitem{pearl88}
+J.~Pearl.
+\newblock Probabilistic reasoning in intelligent systems: Networks of plausible
+  inference, 1988.
+
+\bibitem{porter80}
+M.F. Porter.
+\newblock An algorithm for suffix stripping.
+\newblock Program 14 (3), July 1980.
+
+\bibitem{www:postgresql}
+{P}ostgre{SQL}.
+\newblock http://www.postgresql.org.
+
+\bibitem{radecki79}
+T.~Radecki.
+\newblock Fuzzy set theoretical approach to document retrieval, 1979.
+
+\bibitem{www:xml}
+W3C Recommendation.
+\newblock Extenisble markup language (xml) 1.0.
+\newblock http://www.w3.org/TR/REC-xml, Feb 1999.
+
+\bibitem{www:xslt}
+W3C Recommendation.
+\newblock Xsl transormations (xslt) 1.0.
+\newblock http://www.w3.org/TR/xslt, Nov 1999.
+
+\bibitem{RFC1896}
+P.~Resnick and A.~Walker.
+\newblock {RFC 1896}: The text\slash enriched {MIME} content-type, February
+  1996.
+
+\bibitem{ribeiro96}
+B.~Ribeiro and R.~Muntz.
+\newblock A belief network model for ir, 1996.
+
+\bibitem{robertson76}
+S.~Robertson and K.~Sparck-Jones.
+\newblock Relevance weighting of search terms, 1976.
+
+\bibitem{salton71}
+G.~Salton.
+\newblock The smart retrieval system: experiments in automatic document
+  processing, 1971.
+
+\bibitem{salton83}
+G.~Salton, E.~Fox, and H.~Wu.
+\newblock Extended boolean information retrieval, 1983.
+
+\bibitem{salton68}
+G.~Salton and M.~Lesk.
+\newblock Computer evaluation of indexing and text processing, 1968.
+
+\bibitem{schuegraf76}
+E.~Schuegraf.
+\newblock Compression of large inverted files with hyperbolic term
+  distribution, 1976.
+
+\bibitem{Stanfill89}
+Craig Stanfill, Robert Thau, and David Waltz.
+\newblock A parallel indexed algorithm for information retrieval.
+\newblock In {\em Proceedings of the Twelfth Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval},
+  Architectures, pages 88--97, 1989.
+
+\bibitem{teuhola78}
+J.~Teuhola.
+\newblock A compression method for clustered bit-vectors, 1978.
+
+\bibitem{Tomasic:1994:IUI}
+A.~Tomasic, H.~Garc{\'\i}a-Molina, and K.~Shoens.
+\newblock Incremental updates of inverted lists for text document retrieval.
+\newblock {\em SIGMOD Record (ACM Special Interest Group on Management of
+  Data)}, 23(2):289--300, June 1994.
+
+\bibitem{turtle90}
+H.~Turtle and W.~Croft.
+\newblock Inference networks for document retrieval, 1990.
+
+\bibitem{turtle91}
+H.~Turtle and W.~Croft.
+\newblock Evaluation of an inference network-based retrieval model, 1991.
+
+\bibitem{wilkinson91}
+R.~Wilkinson and P.~Hingston.
+\newblock Using the cosine measure in a neural network for document retrieval,
+  1991.
+
+\bibitem{witten91indexing}
+I.~Witten, T.~Bell, and C.~Nevill.
+\newblock Indexing and compressing full-text databases for cd-rom, 1991.
+
+\bibitem{wong85}
+S.~Wong, W.~Ziarko, and P.~Wong.
+\newblock Generalized vector space model in information retrieval, 1985.
+
+\bibitem{www:yahoo}
+Yahoo.
+\newblock http://www.yahoo.com.
+
+\bibitem{zhihong98:_hardw_softw_balan_act_infor}
+Brendon~Cahoon Zhihong~Lu, Kathryn S.~McKinley.
+\newblock The hardware/software balancing act for information retrieval on
+  symmetric multiprocessors.
+\newblock 1998.
+
+\bibitem{LuCallanCroft91:infer_nets}
+James P.~Callan Zhihong~Lu and W.~Bruce Croft.
+\newblock Applying inference networks to multiple collection searching.
+\newblock 1991.
+
+\bibitem{luMcK:Search_tera_repli}
+Kathryn S.~McKinley Zhihong~Lu.
+\newblock Searching a terabyte of text using partial replication.
+
+\bibitem{zipf49}
+G.~K. Zipf.
+\newblock {\em Human Behavior and the Principle of Least-Effort}.
+\newblock Addison-Wesley, Cambridge, MA, 1949.
+
+\end{thebibliography}

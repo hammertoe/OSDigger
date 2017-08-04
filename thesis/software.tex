@@ -1,0 +1,349 @@
+%% $Id: software.tex,v 1.2 2000/05/14 23:09:32 matt Exp $
+
+\chapter{Software Guide}
+
+\section{Software Availability}
+The home page for the project is \texttt{http://beta.osdigger.com/osdigger/}. 
+
+Available from there is:
+\begin{itemize}
+\item The source code as a tarball
+\item CVSWeb access to the source code
+\item A Library of various Information Retrieval papers
+\item Various forms of this thesis (\latex, DVI, PS, HTML)
+\end{itemize}
+
+\section{Choice of Programming Languages}
+Programming languages each have their particular features that make them good for particular tasks.  Hence in this project several languages were used for different parts, as shown in Table \ref{tab:lang}
+
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}{l|l|p{6cm}}
+      \emph{Language} & \emph{Section} & \emph{Reason} \\
+      \hline
+      C    &  Indexer      &  Speed        \\
+           &  Inverter     &  Speed        \\
+           &  Query Server &  Speed     \\
+      Java &  Web scripts  &  Good XML/XSL support   \\
+      Perl &  Parser       &  Great at parsing text. Has existing MIME modules   \\    
+    \end{tabular}
+    \caption{Programming Languages Used}
+    \label{tab:lang}
+  \end{center}
+\end{table}
+
+Half way through the project, I decided to try and code the indexer in Java to see how it would compare.  Although the speed was too slow for production use, the object oriented nature was well suited for the task.  The may be worth looking into again at a later date when Java is a bit quicker.
+
+\section{Software Structure}
+
+The code is quite diverse with several sections in several languages.  As this software is not intended at the moment to be distributed to users and installed on their machines, no effort has yet been made no neatly package up the code for easy installation.
+
+Below is a breakdown of the sections and the files in those sections and what they do.
+
+\subsection{Indexer}
+The indexer is actually three parts, the indexer, the inverter and the query server, all written in C.  A description of the source files is in Table \ref{tab:indexcode}.  
+
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{l|p{9.5cm}}
+\emph{File} & \emph{Description} \\
+\hline
+\emph{indexer} & \\
+indexer.c     &  The main file for the indexer.  It retrieves documents from the MySQL database and parses them \\
+indexer.h     &  Header file for above \\
+parse.c       &  Implements a zero-copy parser for the indexer \\
+parse.h       &  Header file for above \\
+processword.c &  Processes each word, stemming it, looking it up in the lexicon and adding it to the forward index \\
+processword.h &  Header file for above \\
+\hline
+\emph{inverter} & \\
+inverter.c    &  Reads a forward index and inverts it in memory and writes an inverted index to disk\\
+\hline
+\emph{query server} & \\
+search.c      &  Main query server daemon.  Listens for queries on 3333/tcp and processes them.\\
+search.h      &  Header file for above \\
+searchset.c   &  Implements a 'set' of documents for the query server \\
+searchset.h   &  Header file for above \\
+net.c         &  Implements the network function for the search server (from Comer \& Stevens, TCP/IP Vol. III)\\
+\hline
+\emph{common} & \\
+inverted.c    &  Creates and inverted index object, has methods to index a word \\
+inverted.h    &  Header file for above \\
+forward.c     &  Creates and forward index object, has methods to index a word \\
+forward.h     &  Header file for above\\
+lexicon.c     &  Creates a Lexicon object, has methods to lookup and add words to the lexicon \\
+lexicon.h     &  Header file for above\\
+stem.c        &  Implements the Porter Stemming Algorithm (B. Frakes and C. Cox, 1986) \\
+bitio*.h      &  Bitwise IO and compression routines. (N. Sharman and A. Moffat, 1994) \\
+
+\end{tabular}
+\end{center}
+\caption{Source files for the Indexer}
+\label{tab:indexcode}
+\end{table}
+
+
+\subsubsection{Indexer}
+The indexer retrieves documents from the MySQL database and parses them using a zero-copy parser.  The parsing and stemming was one of the main bottlenecks of the system to start with, hence quite a bit of work was put in to eliminating all of the memory allocation and copying routines.  This gave the resultant parser a significant performance boost.  The parsed and stemmed words are then looked up in the lexicon and stored in compressed for as a record in a BerkeleyDB database.
+
+\subsubsection{Inverter}
+The inverter is run on each of the forward indexes.  It reads and decompresses the word list for each document and then constructs a hash table in memory of words.  Each time a word appears in a document, that document number is added to that words document list.  This can require quite a large amount of memory, hence why the forward indexes are split into eight.  Each one can be processed separately.  
+
+The document lists are stored in compressed form in memory, which reduces the memory needs of the inverter considerably.  Once the entire forward file has been processed the inverted file is written to disk as a BerkeleyDB file with each word as a separate record.
+
+\subsubsection{Query Server}
+The query server opens all of the inverted and forward indexes along with the forward and reverse lexicons at startup.  It then listens on TCP port 3333 for queries.  It is currently a single threaded server and processes requests from the java servlet sequentially.
+
+When a query comes in the server stems each query term and looks its wordid up in the lexicon.  It then retrieves the document list for each term from the inverted indexes.  The first three bits of the wordid indicate which of the eight inverted indexes the word is in.
+
+A searchset is then constructed of each search term.  The sets are in order and hence a merge sort can be performed to find any document ids that appear in all of the word lists.  When one is found it is added to an array of results, with the score of that result being computed by the accumulation of the TF$\times$IDF scores for each word.
+
+Once the smallest document list has been exhausted the merge stops and the results array is sorted by descending score using the system qsort function.
+
+The document ids are then looked up in the MySQL database and the subject, date, list and author are returned.  The results are formatted as XML and passed back down the network socket to the servlet.
+
+\subsection{Parser}
+The parser is contained in a single Perl script, \emph{load.pl}.  It is called by the mail server when each new message arrives.  The script makes a connection to the MySQL database and uses the MIME::Head and MIME::Parser modules to parse the message passed on standard input.  Various headers are extracted from the message and an SQL query constructed.  The text parts of the message body are extracted and concatenated together.  
+
+The message is checked to ensure that it has a message id and a To or Cc header, if not it is discarded.  The parser also checks to see if the message has an X-No-Archive header set.  If so the message is also discarded.
+
+The query is then executed to insert the message into the database.  The User Defined Function \texttt{Pack()} is called on the message body to compress it before it is inserted.
+
+If the query fails due to the database not accessible then the script fails with an error code of 75.  This is picked up by the mail server during delivery and causes the delivery to fail temporarily.  The mail server will queue the message and try again later.
+
+Any error messages during parsing are directed away from the sender to an admin address such that a failed parse will not cause the message to bounce, and the address to be removed from the mailing list.
+
+\subsection{Java Servlets}
+There are three Java servlets currently implemented:
+
+\begin{tabular}{l|p{9.5cm}}
+\emph{Servlet} & \emph{Description} \\
+\hline
+Query.class & Takes a query from an HTML form and returns the results \\
+Browse.class & Takes a list name and displays the most current messages on that list \\
+Message.class & Takes a message id and displays the corresponding message \\
+\end{tabular}
+
+The servlets open a socket to the query server and send their query to it.  The query server then pass the results back formatted in XML.  The servlets use the Xerces XML parser and the Xalan XSLT processor to transform it with a specified stylesheet.  The resultant HTML it then passed back to the users web browser.  Most of the work is done by the XSLT processor hence there is really not much to the servlets themselves.
+
+
+\section{Code Samples}
+These are sample sections taken from the code that demonstrate particular parts of the code that I am most proud of.
+
+\subsection{Parser}
+The following fragment is part of the zero-copy parser in \texttt{parse.c}.  It was profiled quite a bit to reduce as many performance hindrances as possible.  Procedures \texttt{tolower2()}, \texttt{isalnum2()} and \texttt{ispunct2()} are macros and inline functions to speed things up.
+
+The parser works through a text string (a document) from the start, \texttt{s} until the end, \texttt{e}.  A word may have the punctuation characters [\texttt{\_-.@}] provided only one occurs in a row and that it is surrounded by two alphanumeric characters (line 28).  This picks up email addresses and version numbers that may want preserving.
+
+Each valid word is then passed to \texttt{processword()} to be processed (line 110).
+
+\begin{listing}{70}
+void parse(unsigned int docnum, char *s, char *e) {
+  char *w;  // working pointer  
+  int len;  // length of the word
+  int i;
+
+  // Create a new document entry in each forward index
+  for(i=0; i<8; i++)
+    f[i]->newdocnum(f[i], docnum);
+
+  w=s;          // set the pointer to the start
+  while(w<e) {  // while not at the end of the doc
+    // eat up non alphanumeric space
+    while(!isalnum2(*w) && w<e)
+      w++;
+    s=w;
+     
+  start:
+    // move pointer along word until we reach the end
+    // or reach non-alphanumeric characters
+    while(isalnum2(*w) && w<e) {
+      *w = tolower2(*w);  
+      w++;
+    }
+
+    // punctuation support
+    // if the character after the punctuation character
+    // is alphanumeric then continue parsing
+    if (ispunct2(*w) && w+1<e) {
+      if(isalnum2(*(w+1))) {
+        w++;
+        goto start;
+      }
+    }
+
+    *w = 0;       // mark the end of the string
+    len =  w - s; // calculate the length of the string
+
+    // Only accept words greater than 2 and less than 15 letters
+    if(len > 2 && len < 15) {
+      // process the word
+      processword(docnum, s);
+    }
+  }
+  // Close all of the forward indexes
+  for(i=0; i<8; i++)
+    f[i]->enddocnum(f[i]);
+}
+
+\end{listing}
+
+
+\subsection{Query Server Ranking}
+The query server does a merge sort on all of the query terms in order to find document numbers that appear in the document lists for all of the terms.  The sample below is taken from \texttt{search.c}.  
+
+First an array of search sets are created one for each term:
+
+\begin{listing}{108}
+  // Construct search sets
+  for(t=0; t<numterms; t++) {
+    Stem(terms[t]); // stem the term
+    // lookup the wordid in the lexicon
+    wordid = lex->getwordid(lex, terms[t]);
+    // Construct the set
+    set[t] = getwordlist(wordid);
+  }
+\end{listing}
+
+The first document number is then fetched from each set and the count of number of results is reset:
+
+\begin{listing}{117}
+  // Get first docnum in each list
+  for(t=0; t<numterms; t++)
+    set[t]->getnext(set[t]);
+    
+  numresults = 0;
+\end{listing}
+
+The array of sets is then sorted so that the set with the lowest current document number is at position zero.  The current document number of each set is then compared to the next set, if they do not match then the comparison ends and the \texttt{match} variable set to zero:
+
+\begin{listing}{123}
+  // Merge all of the results looking for matches
+  do {
+    int match = 1; // match by default
+      
+    // Sort the sets
+    qsort(set, numterms, sizeof(struct searchset *), compar);
+        
+    // Check if all the docnums match
+    for(t=0; t<numterms-1; t++) {
+      if(set[t]->docnum != set[t+1]->docnum) {
+        match = 0;
+        break;
+      }
+    }
+\end{listing}
+
+If all of the document numbers are the same then all of the query terms appear in that document.  The score for each word is calculated in line 145.  The log of the number of times the word appears is used to prevent a document with too many occurrences getting scored too high.  The document weight is returned in line 149, it is calculated as the number of words in the document
+
+\begin{listing}{138}
+    // If there is a match...
+    if(match) {
+      float score = 0;
+      unsigned int wd;
+
+      // Calculate the cumulative scores for the words
+      for(t=0; t<numterms; t++) {
+        score += log(1 + set[t]->count) * set[t]->wt;
+      }
+  
+      // Get the document weight
+      wd = getwd(set[0]->docnum);
+      numresults++;
+
+      // Allocate some more memory for the new result
+      *results = realloc(*results, numresults * sizeof(struct score));
+      if(results == NULL) {
+        fprintf(stderr, "Malloc error\n");
+        exit(1);
+      }
+
+      // Insert the result into the array
+      (*results + numresults - 1)->docnum = set[0]->docnum;
+      (*results + numresults - 1)->score = score/wd*100;
+    }
+\end{listing}
+
+This process loops, retrieving the next document number from the list with the lowest current document number, \texttt{set[0]}, or until the end is reached on a list -- returns -1.
+
+\begin{listing}{164}
+    // increment the lowest list
+  } while (set[0]->getnext(set[0]) != -1);
+\end{listing}
+
+The final results are then sorted by score, and the number of results is returned.
+
+\begin{listing}{167}
+  // Sort the final scores
+  qsort(*results, numresults, sizeof(struct score), rescompar);
+  
+  // Return the number of results
+  return (numresults);
+}
+\end{listing}
+
+
+\section{Third Party Software Components}
+Several existing pieces of software were incorporated into OSDigger.  This saved quite a bit of development time.  Below is a \emph{brief} synopsis of the software, the author and the license.
+
+
+\subsection{Compression routines}
+Author: \emph{Neil Sharman and Alistair Moffat} \\
+License: \emph{GNU General Public License} \\
+
+These routines are C macros used in the indexer, inverter and query server.  They allow writing and reading of integers coded in various forms: unary, binary, delta, gamma, bernoulli.  They were taken from the software mg-1.3x (Managing Gigabytes \cite{wmb:mg}).
+
+\subsection{MIME-Tools}
+Author: \emph{Eryq} \\
+License: \emph{GNU General Public License} \\
+
+This is a perl module that simplifies the decoding of MIME Internet mail messages \cite{RFC2045}.  It is used in the parser to strip away unwanted binary attachments, and decode base64 and uuencoded text parts.
+
+\subsection{Xerces XML Parser}
+Author: \emph{The Apache Foundation} \\
+License: \emph{Apache Software License} \\
+
+An XML parser derived from IBMs XML4J.  It is used in the Java Servlet running on the web server to parse the XML data read from the query server.
+
+
+\subsection{Xalan XSLT Stylesheet Processor}
+Author: \emph{The Apache Foundation} \\
+License: \emph{Apache Software License} \\
+
+An XSLT processor, it is used in the Java Servlet to apply stylesheets to the XML data parsed by Xerces.
+
+\subsection{BerkeleyDB 3.x}
+Author: \emph{Sleepycat Software} \\
+License: \emph{Free re-distribution with Open Source Software} \\
+
+An embedded database, it is used to store the forward and reverse indexes produced and read by the indexer, inverter and query server.
+
+\subsection{MySQL}
+Author: \emph{TcX AB} \\
+License: \emph{Free for use, provided it is not sold as part of a product} \\
+
+An SQL database, used to store the mail messages in once parsed by the parser.
+
+\subsection{ZLib}
+Author: \emph{Jean-loup Gailly and Mark Adler} \\
+License: \emph{May be freely redistributed provided it is not altered} \\
+
+A compression library used to compress the bodies of the mail messages as they are stored in the database.
+
+\subsection{MM MySQL JDBC Drivers}
+Author: \emph{Mark Matthews} \\
+License: \emph{GNU General Public License} \\
+
+Java Database Connectivity drivers to allow Java programs to access the MySQL database.  These are used for the servlet to store/retrieve preferences from the database.
+
+% LocalWords:  http pl admin Servlets servlets stylesheet tolower isalnum int
+% LocalWords:  osdigger com tarball CVSWeb DVI PS HTML htbp XML XSL Perl MySQL
+% LocalWords:  processword tcp searchset IP Frakes bitio Sharman Moffat java TF
+% LocalWords:  BerkeleyDB servlet wordid ids IDF qsort OSDigger bernoulli mg wd
+% LocalWords:  Gigabytes Eryq perl uuencoded Xerces IBMs Xalan XSLT Stylesheet
+% LocalWords:  stylesheets Sleepycat TcX SQL ZLib Gailly Adler JDBC ispunct len
+% LocalWords:  inline docnum newdocnum enddocnum numterms getwordid getwordlist
+% LocalWords:  getnext numresults sizeof struct compar docnums wt getwd realloc
+% LocalWords:  fprintf stderr Malloc rescompar LocalWords

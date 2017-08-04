@@ -1,0 +1,181 @@
+\contentsline {part}{I\hspace {1em}Specification and Design}{1}
+\contentsline {chapter}{\numberline {1}User Requirements}{2}
+\contentsline {section}{\numberline {1.1}The Customer}{2}
+\contentsline {section}{\numberline {1.2}Motivation}{2}
+\contentsline {section}{\numberline {1.3}Requirements}{3}
+\contentsline {chapter}{\numberline {2}Initial Specification}{5}
+\contentsline {section}{\numberline {2.1}System Overview}{5}
+\contentsline {section}{\numberline {2.2}Adding new messages}{6}
+\contentsline {subsection}{\numberline {2.2.1}Mail Server}{6}
+\contentsline {subsection}{\numberline {2.2.2}Parser}{6}
+\contentsline {subsection}{\numberline {2.2.3}Database}{6}
+\contentsline {section}{\numberline {2.3}Indexing Messages}{7}
+\contentsline {subsection}{\numberline {2.3.1}Indexer}{7}
+\contentsline {section}{\numberline {2.4}Serving User Requests}{7}
+\contentsline {subsection}{\numberline {2.4.1}Searching}{8}
+\contentsline {subsection}{\numberline {2.4.2}Browsing}{8}
+\contentsline {subsection}{\numberline {2.4.3}Customisability}{8}
+\contentsline {subsection}{\numberline {2.4.4}Query Server}{9}
+\contentsline {subsection}{\numberline {2.4.5}Web Server}{9}
+\contentsline {section}{\numberline {2.5}Misc}{9}
+\contentsline {subsection}{\numberline {2.5.1}Privacy}{9}
+\contentsline {subsection}{\numberline {2.5.2}Platform}{9}
+\contentsline {chapter}{\numberline {3}Risk Analysis}{10}
+\contentsline {section}{\numberline {3.1}Project}{10}
+\contentsline {section}{\numberline {3.2}Technical}{11}
+\contentsline {section}{\numberline {3.3}Business}{13}
+\contentsline {chapter}{\numberline {4}Prototype}{14}
+\contentsline {section}{\numberline {4.1}Indexer}{14}
+\contentsline {section}{\numberline {4.2}Front End}{14}
+\contentsline {section}{\numberline {4.3}Conclusion}{16}
+\contentsline {part}{II\hspace {1em}Planning}{17}
+\contentsline {chapter}{\numberline {5}Project Plan}{18}
+\contentsline {section}{\numberline {5.1}Timeline}{18}
+\contentsline {subsection}{\numberline {5.1.1}Task list}{18}
+\contentsline {subsection}{\numberline {5.1.2}Resources and task assignment}{21}
+\contentsline {subsubsection}{Matt Hamilton }{21}
+\contentsline {subsubsection}{Tim Saigol }{22}
+\contentsline {subsubsection}{Chris Green }{22}
+\contentsline {subsubsection}{Chris Parsons }{23}
+\contentsline {subsubsection}{Chris Green, Chris Parsons, Tim Saigol, Matt Hamilton }{23}
+\contentsline {section}{\numberline {5.2}Resources}{23}
+\contentsline {subsection}{\numberline {5.2.1}Server}{23}
+\contentsline {part}{III\hspace {1em}Business Plan}{25}
+\contentsline {chapter}{\numberline {6}Executive Summary}{26}
+\contentsline {chapter}{\numberline {7}The Business and Its Management}{27}
+\contentsline {section}{\numberline {7.1}Introduction to the Business}{27}
+\contentsline {subsection}{\numberline {7.1.1}What are Mailing Lists?}{27}
+\contentsline {subsection}{\numberline {7.1.2}What is Open Source Software?}{28}
+\contentsline {subsection}{\numberline {7.1.3}Why Open Source Software?}{28}
+\contentsline {subsection}{\numberline {7.1.4}Motivation}{29}
+\contentsline {section}{\numberline {7.2}Mission Statement}{29}
+\contentsline {section}{\numberline {7.3}History and Position to Date}{29}
+\contentsline {section}{\numberline {7.4}Objectives, Near Term}{30}
+\contentsline {section}{\numberline {7.5}Objectives, Long Term}{30}
+\contentsline {section}{\numberline {7.6}Key Staff}{30}
+\contentsline {subsection}{\numberline {7.6.1}Matt Hamilton}{30}
+\contentsline {subsection}{\numberline {7.6.2}Tim Saigol}{31}
+\contentsline {subsection}{\numberline {7.6.3}Chris Green}{31}
+\contentsline {subsection}{\numberline {7.6.4}Chris Parsons}{31}
+\contentsline {chapter}{\numberline {8}Products}{32}
+\contentsline {section}{\numberline {8.1}Product Description}{32}
+\contentsline {subsection}{\numberline {8.1.1}Searching}{32}
+\contentsline {subsection}{\numberline {8.1.2}Browsing}{33}
+\contentsline {section}{\numberline {8.2}Readiness for Market}{33}
+\contentsline {section}{\numberline {8.3}Applications}{33}
+\contentsline {section}{\numberline {8.4}Comparison of Competition}{33}
+\contentsline {section}{\numberline {8.5}Legal Protection}{33}
+\contentsline {section}{\numberline {8.6}Product Differentiation}{34}
+\contentsline {chapter}{\numberline {9}Market and Competitors}{35}
+\contentsline {section}{\numberline {9.1}Service Scope}{35}
+\contentsline {section}{\numberline {9.2}Description of Customers}{35}
+\contentsline {subsection}{\numberline {9.2.1}Developers}{35}
+\contentsline {subsection}{\numberline {9.2.2}Novice Users}{36}
+\contentsline {section}{\numberline {9.3}Customer Needs and Benefits}{36}
+\contentsline {section}{\numberline {9.4}Market Size and Growth}{39}
+\contentsline {subsection}{\numberline {9.4.1}Estimating the Market Size}{39}
+\contentsline {subsection}{\numberline {9.4.2}Market Growth}{40}
+\contentsline {section}{\numberline {9.5}Competitors}{40}
+\contentsline {subsection}{\numberline {9.5.1}GeoCrawler}{40}
+\contentsline {subsection}{\numberline {9.5.2}MARC}{41}
+\contentsline {subsection}{\numberline {9.5.3}eGroups}{41}
+\contentsline {subsection}{\numberline {9.5.4}DejaNews}{41}
+\contentsline {subsection}{\numberline {9.5.5}SourceForge}{41}
+\contentsline {subsection}{\numberline {9.5.6}Strengths and Weaknesses}{42}
+\contentsline {subsection}{\numberline {9.5.7}Critical Success Factors}{42}
+\contentsline {chapter}{\numberline {10}Competetive Business Strategy}{44}
+\contentsline {section}{\numberline {10.1}Pricing}{44}
+\contentsline {section}{\numberline {10.2}Advertising Revenue}{44}
+\contentsline {subsection}{\numberline {10.2.1}Advertising Rates}{45}
+\contentsline {subsection}{\numberline {10.2.2}In-House Advertising}{45}
+\contentsline {subsection}{\numberline {10.2.3}Other Revenue}{46}
+\contentsline {chapter}{\numberline {11}Forcasts and Financial Data}{47}
+\contentsline {section}{\numberline {11.1}Sales Forcasts}{47}
+\contentsline {part}{IV\hspace {1em}Implementation}{49}
+\contentsline {chapter}{\numberline {12}Related Work}{50}
+\contentsline {section}{\numberline {12.1}Digital Libraries}{50}
+\contentsline {section}{\numberline {12.2}Information Storage}{51}
+\contentsline {section}{\numberline {12.3}Indexing Methods}{51}
+\contentsline {subsection}{\numberline {12.3.1}Inverted Indexes}{51}
+\contentsline {subsubsection}{Index Construction}{52}
+\contentsline {subsubsection}{Searches}{52}
+\contentsline {subsection}{\numberline {12.3.2}Signatures}{52}
+\contentsline {subsubsection}{Searching}{53}
+\contentsline {subsubsection}{Index Construction}{53}
+\contentsline {subsection}{\numberline {12.3.3}Suffix Tries}{53}
+\contentsline {subsection}{\numberline {12.3.4}Sequential Searching}{54}
+\contentsline {section}{\numberline {12.4}Compression}{54}
+\contentsline {subsection}{\numberline {12.4.1}Text Compression}{54}
+\contentsline {subsection}{\numberline {12.4.2}Index Compression}{55}
+\contentsline {section}{\numberline {12.5}Storage}{56}
+\contentsline {subsection}{\numberline {12.5.1}Index Storage}{56}
+\contentsline {subsection}{\numberline {12.5.2}Updating Indexes}{56}
+\contentsline {subsection}{\numberline {12.5.3}Distributed Searches}{56}
+\contentsline {section}{\numberline {12.6}Algorithms}{57}
+\contentsline {subsection}{\numberline {12.6.1}Compression Schemes}{57}
+\contentsline {subsubsection}{Golomb Coding}{58}
+\contentsline {subsubsection}{Local Bernoulli Model}{59}
+\contentsline {subsection}{\numberline {12.6.2}Document Ranking}{60}
+\contentsline {subsubsection}{Boolean Queries}{60}
+\contentsline {subsubsection}{Ranked Queries}{60}
+\contentsline {subsubsection}{Document and Term Weights}{61}
+\contentsline {subsubsection}{Cosine Measure}{62}
+\contentsline {chapter}{\numberline {13}Technical Basis}{64}
+\contentsline {section}{\numberline {13.1}OSDigger Implementation}{64}
+\contentsline {subsection}{\numberline {13.1.1}Storage}{64}
+\contentsline {subsection}{\numberline {13.1.2}Word Stemming}{65}
+\contentsline {subsection}{\numberline {13.1.3}Index Compression}{65}
+\contentsline {subsection}{\numberline {13.1.4}Index Construction}{66}
+\contentsline {subsection}{\numberline {13.1.5}Searches}{67}
+\contentsline {subsubsection}{Onestep Searches}{67}
+\contentsline {subsubsection}{Twostep Searches}{67}
+\contentsline {section}{\numberline {13.2}User Interface}{68}
+\contentsline {chapter}{\numberline {14}Specification and Design}{72}
+\contentsline {section}{\numberline {14.1}Overall Design}{72}
+\contentsline {section}{\numberline {14.2}Database}{72}
+\contentsline {section}{\numberline {14.3}Indexer}{74}
+\contentsline {subsection}{\numberline {14.3.1}Indexer}{74}
+\contentsline {subsection}{\numberline {14.3.2}Inverter}{75}
+\contentsline {section}{\numberline {14.4}Query Server}{75}
+\contentsline {subsection}{\numberline {14.4.1}Onestep Queries}{75}
+\contentsline {subsection}{\numberline {14.4.2}Twostep Queries}{75}
+\contentsline {section}{\numberline {14.5}Web Site}{76}
+\contentsline {section}{\numberline {14.6}Parser}{76}
+\contentsline {chapter}{\numberline {15}Software Guide}{77}
+\contentsline {section}{\numberline {15.1}Software Availability}{77}
+\contentsline {section}{\numberline {15.2}Choice of Programming Languages}{77}
+\contentsline {section}{\numberline {15.3}Software Structure}{78}
+\contentsline {subsection}{\numberline {15.3.1}Indexer}{78}
+\contentsline {subsubsection}{Indexer}{78}
+\contentsline {subsubsection}{Inverter}{78}
+\contentsline {subsubsection}{Query Server}{80}
+\contentsline {subsection}{\numberline {15.3.2}Parser}{80}
+\contentsline {subsection}{\numberline {15.3.3}Java Servlets}{81}
+\contentsline {section}{\numberline {15.4}Code Samples}{81}
+\contentsline {subsection}{\numberline {15.4.1}Parser}{81}
+\contentsline {subsection}{\numberline {15.4.2}Query Server Ranking}{83}
+\contentsline {section}{\numberline {15.5}Third Party Software Components}{85}
+\contentsline {subsection}{\numberline {15.5.1}Compression routines}{85}
+\contentsline {subsection}{\numberline {15.5.2}MIME-Tools}{86}
+\contentsline {subsection}{\numberline {15.5.3}Xerces XML Parser}{86}
+\contentsline {subsection}{\numberline {15.5.4}Xalan XSLT Stylesheet Processor}{86}
+\contentsline {subsection}{\numberline {15.5.5}BerkeleyDB 3.x}{86}
+\contentsline {subsection}{\numberline {15.5.6}MySQL}{86}
+\contentsline {subsection}{\numberline {15.5.7}ZLib}{87}
+\contentsline {subsection}{\numberline {15.5.8}MM MySQL JDBC Drivers}{87}
+\contentsline {chapter}{\numberline {16}Maintenance Guide}{88}
+\contentsline {section}{\numberline {16.1}Source Control}{88}
+\contentsline {section}{\numberline {16.2}Makefiles}{89}
+\contentsline {subsection}{\numberline {16.2.1}Documentation}{89}
+\contentsline {subsection}{\numberline {16.2.2}Indexer}{89}
+\contentsline {section}{\numberline {16.3}Portability}{90}
+\contentsline {part}{V\hspace {1em}Operations}{91}
+\contentsline {chapter}{\numberline {17}Security}{92}
+\contentsline {chapter}{\numberline {18}Testing}{93}
+\contentsline {chapter}{\numberline {19}Integration}{94}
+\contentsline {part}{VI\hspace {1em}Project Review}{95}
+\contentsline {chapter}{\numberline {20}Project Review}{96}
+\contentsline {chapter}{\numberline {21}Future Work}{97}
+\contentsline {section}{\numberline {21.1}Tilebars}{97}
+\contentsline {section}{\numberline {21.2}LSI}{97}
+\contentsline {part}{References}{97}

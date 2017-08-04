@@ -1,0 +1,74 @@
+%% $Id: risk.tex,v 1.7 2000/05/09 16:56:03 matt Exp $
+
+\newcommand{\risk}[3]{{\large \textbf{#1}} \\ \emph{Probability: #2\%, Impact: #3}\\}
+
+\chapter{Risk Analysis}
+The risks have been divided up into three sections \emph{Project},
+\emph{Technical} and \emph{Business}.  Each risk has been given an estimated probability of occuring, and an estimation of the impact to the project.
+
+\section{Project}
+\risk{Department Y2K shutdown}{90}{low}
+\textbf{Detail:} The University will be shutting down over the millennium
+for safety
+reasons. This means that the computing facilities will be out of use.
+There may be residue effects of the shutdown such as lost working time.
+\\
+\textbf{Reduction:} Most of the development of the software from the project can also be done from home.  Backups of the main CVS repository are taken each night so there will always be access to recent revisions of the software to work on should the department close.
+\vspace{3mm}
+
+\risk{Illness}{5}{High}
+\textbf{Detail:} As I am the only person working on the project, should I become ill, the project will probably not be completed on time. 
+\\
+\textbf{Reduction:} As this is an individual project, there is not much really I can do about it.  
+\vspace{3mm}
+
+\risk{Run out of time}{20}{Medium}
+\textbf{Detail:} I have other assignments to do within the university which may take up more of my time than planned. It is also possible that I might under-estimate the time needed to complete the project.
+\\
+\textbf{Reduction:} Proper planning.  I need to make a project plan and timeline, detailing how much time each part of the project will take, and stick to it.
+
+\section{Technical}
+
+\risk{Parser fails to parse all forms of messages}{10}{Medium}
+\textbf{Detail:} The parser has to parse all sorts of messages coming in, conforming to several standards \cite{RFC0822, RFC2045, RFC2046, RFC2047, RFC1896}.  If it fails to parse the messages correctly then messages may be missed by the archive, or worse still bounced messages may cause the mailing list to unsubscribe us.
+\\
+\textbf{Reduction:} The only way to test that the parser handles all the standards of messages (and their idiosyncrasies) is to parse as much mail as possible and watch the outcome.  There are various libraries for parsing Internet mail and hopefully we can use one of them.  If a message cannot be parsed an error should be logged so we can refine the parser.
+\vspace{3mm}
+
+\risk{Indexer cannot index text fast enough}{5}{Medium}
+\textbf{Detail:} The indexer must be able to index the messages fast enough such that the index can be kept as up-to-date as possible.  We hope to rebuild the index at least once a day.
+\\
+\textbf{Reduction:} By carefully studying existing algorithms for creating indexes and profiling existing indexers the common bottlenecks have been found and removed or optimised.  In the worst case a faster server can be purchased (at the time of writing, the fastest production processors are 2-3 times faster than the ones used in the supplied server).
+\vspace{3mm}
+
+\risk{Query Server cannot perform queries fast enough}{10}{Medium}
+\textbf{Detail:} As the size of the index grows and the popularity of the archive increases the queries may take longer to run.  If the results are not returned within a couple of seconds then the user will lose interest.
+\\
+\textbf{Reduction:} By benchmarking and profiling the the query server we should be able to find out any slow spots in its execution.  Where possible it should use a minimum number of disk accesses
+\vspace{3mm}
+
+\risk{Server security is breached}{1}{Severe}
+\textbf{Detail:} If someone gained unauthorised access to the server, they could delete valuable archives of messages, or take the server offline.
+\\
+\textbf{Reduction:} The server will be running FreeBSD, a fairly secure variety of Unix.  A firewall will be running and only specific ports will be let through.  Only specifically needed services will be running.  Further information about the security of the server can be found in Section \ref{security}.
+
+\pagebreak
+\section{Business}
+
+\risk{Competition}{20}{Medium}
+\textbf{Detail:} There are currently no archives of this scale on the web, which puts us in the strong position as being the first, however large web portals with existing presence could still release a competing site.
+\\
+\textbf{Reduction:} We have found that there is currently no out-of-the box software to do what we want, this means that any competitors would have to develop their own software as well.  They could still launch before us, but having done much of the research already we would still have the lead.  By keeping in close contact with the Open Source community we hope that our site will be more popular than any competitors.
+\vspace{3mm}
+
+\risk{Overwhelming success}{30}{Medium} 
+\textbf{Detail:} Should the site become an overwhelming success, resulting in more visitors to the site than we can handle, we could easily fail.
+\\
+\textbf{Reduction:} Before we launch we will do load simulations on the server, to assess the effects of lots of simultaneous requests.  From these tests we will be able to work out what the highest hit rate the server can safely handle.  With this data we will be able to decide whether we have enough capacity to handle the initial interest.  More details of these simulations will be detailed in Section \ref{testing}
+\vspace{3mm}
+
+\risk{Alienating the Open Source community}{10}{High}
+\textbf{Detail:} The Open Source community is very wary.  They want the best for their software and their community, and hold ideals of privacy and open standards very high.  Should we do something that grossly flaunted these ideals we could risk losing credibility and popularity.
+\\
+\textbf{Reduction:} We must make sure that we consult various people within the community to make sure we are providing a service that they will use.  Once the site has been launched we will be releasing the source code to the system under one of the Open Source licenses.  This way we will be releasing something back into the community and giving the opportunity for others to make enhancements and changes to our software should they feel fit.
+% LocalWords:  unsubscribe

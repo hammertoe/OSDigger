@@ -1,0 +1,44 @@
+%% $Id: projplan.tex,v 1.5 1999/12/17 16:48:09 matt Exp $
+
+\chapter{Project Plan}
+In order for the project to be a success it must be ensured that it finishes on time and that we have allocated enough time and resources for each task.
+
+\section{Timeline}
+The project has been broken up into individual tasks that need to be completed.  A Gantt chart representing these tasks is shown in Figure \ref{gantt}.  The other members of Etherworks have been included in this plan, however their actual work should not be considered part of the project, and hence is not shown to any detail.
+
+
+\begin{figure}[!ht]
+\begin{center}
+\epsfig{file=gantt.eps,angle=-90,width=10cm} 
+\end{center}
+\label{gantt}
+\caption{Project Gantt Chart}
+\end{figure}
+
+\input{tasks}
+
+\section{Resources}
+
+\subsection{Server}\label{serverspecs}
+A server has been provided by Etherworks for the development and hosting of the archive.  The Department of Computer Science has kindly allowed the server to be connected to their network, where is can stay during the development stage of the project, however it must be moved for the launch of the site.
+
+
+\begin{table}[!ht]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Memory          & 300MB \\
+\hline
+Processors      & 2 x 300Mhz Intel Pentium II \\
+\hline
+Storage         & 4 x 4GB Wide SCSI Hard Disks \\
+                & DPT RAID 5 Controller with 8MB cache \\
+\hline
+OS              & FreeBSD 3.4 \\
+\hline
+\end{tabular}
+\caption{Server Specification}
+\end{center}
+\end{table}
+
+% LocalWords:  Timeline ht gantt eps MB Mhz Pentium GB DPT

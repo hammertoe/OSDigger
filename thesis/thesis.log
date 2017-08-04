@@ -1,0 +1,496 @@
+This is TeX, Version 3.14159 (Web2C 7.3.1) (format=latex 1999.12.7)  1 JUN 2000 11:53
+**thesis.tex
+(thesis.tex
+LaTeX2e <1998/12/01> patch level 1
+Babel <v3.6x> and hyphenation patterns for american, french, german, ngerman, n
+ohyphenation, loaded.
+(/usr/local/share/texmf/tex/latex/base/report.cls
+Document Class: report 1999/01/07 v1.4a Standard LaTeX document class
+(/usr/local/share/texmf/tex/latex/base/size11.clo
+File: size11.clo 1999/01/07 v1.4a Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/share/texmf/tex/latex/latex2html/html.sty
+Package: html 1996/12/22 v1.1 hypertext commands for latex2html (nd, hws, rrm)
+\c@lpart=\count88
+\c@lchapter=\count89
+\c@lsection=\count90
+\c@lsubsection=\count91
+\c@lsubsubsection=\count92
+\c@lparagraph=\count93
+\c@lsubparagraph=\count94
+\c@lequation=\count95
+\c@lsubsubparagraph=\count96
+\ptrfile=\write3
+)
+(/usr/local/share/texmf/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/local/share/texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/texmf/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/share/texmf/tex/latex/graphics/graphics.sty
+Package: graphics 1999/02/16 v1.0l Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/texmf/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/share/texmf/tex/latex/config/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 80.
+
+(/usr/local/share/texmf/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+\epsfxsize=\dimen105
+\epsfysize=\dimen106
+)
+(/usr/local/share/texmf/tex/latex/misc/supertabular.sty
+Package: supertabular 1997/11/07 v4.1c the supertabular environment
+\c@tracingst=\count97
+\ST@wd=\dimen107
+\ST@rightskip=\skip43
+\ST@leftskip=\skip44
+\ST@parfillskip=\skip45
+\ST@pageleft=\dimen108
+\ST@headht=\dimen109
+\ST@tailht=\dimen110
+\ST@pagesofar=\dimen111
+\ST@pboxht=\dimen112
+\ST@lineht=\dimen113
+\ST@stretchht=\dimen114
+\ST@prevht=\dimen115
+\ST@toadd=\dimen116
+\ST@dimen=\dimen117
+\ST@pbox=\box26
+)
+(/usr/local/share/texmf/tex/latex/misc/moreverb.sty
+Package: moreverb 1997/12/07 v2.2d.2 `more' verbatim facilities
+
+(/usr/local/share/texmf/tex/latex/tools/verbatim.sty
+Package: verbatim 1997/04/30 v1.5k LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks15
+\verbatim@line=\toks16
+\verbatim@in@stream=\read1
+)
+\verbatim@out=\write4
+\tab@position=\count98
+\tab@size=\count99
+\listing@line=\count100
+) (thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+ [1
+
+]
+(thesis.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+ [1
+
+] [2] [3] [4])
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
+
+ [5] (abstract.tex [1]) [1
+
+] (require.tex
+Chapter 1.
+[2
+
+] [3]) (initspec.tex [4]
+Chapter 2.
+File: overview.eps Graphic file (type eps)
+<overview.eps> [5
+
+] [6] [7]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
+
+ (/usr/local/share/texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 1998/03/27 v2.5g Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
+
+[8]) (risk.tex [9]
+Chapter 3.
+[10
+
+] [11] [12]) (prototype.tex [13]
+Chapter 4.
+File: screen1.eps Graphic file (type eps)
+<screen1.eps> [14
+
+] [15]) [16] [17
+
+] (projplan.tex
+Chapter 5.
+File: gantt.eps Graphic file (type eps)
+<gantt.eps> (tasks.tex [18
+
+] [19] [20]
+Overfull \hbox (17.77188pt too wide) in paragraph at lines 77--92
+[] 
+ []
+
+[21]
+Overfull \hbox (14.85185pt too wide) in paragraph at lines 105--114
+[] 
+ []
+
+
+Overfull \hbox (14.85185pt too wide) in paragraph at lines 118--127
+[] 
+ []
+
+[22]
+Overfull \hbox (18.31934pt too wide) in paragraph at lines 131--141
+[] 
+ []
+
+
+Overfull \hbox (16.0381pt too wide) in paragraph at lines 145--154
+[] 
+ []
+
+)) [23] [24] [25
+
+]
+Chapter 6.
+(execsum.tex) [26
+
+]
+Chapter 7.
+(business.tex
+Overfull \hbox (81.39507pt too wide) in paragraph at lines 8--16
+\OT1/cmr/m/n/10.95 tronic mail-ing lists a par-tic-u-lar email ad-dress is setu
+p, eg. \OT1/cmtt/m/n/10.95 freebsd-questions@freebsd.org\OT1/cmr/m/n/10.95 .
+ []
+
+[27
+
+] [28] [29] [30]) [31]
+Chapter 8.
+(products.tex [32
+
+] [33]) [34]
+Chapter 9.
+(market.tex [35
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 16.
+File: survey/lists.eps Graphic file (type eps)
+ <survey/lists.eps>
+File: survey/posts.eps Graphic file (type eps)
+ <survey/posts.eps> [36]
+File: survey/freq.eps Graphic file (type eps)
+ <survey/freq.eps>
+File: survey/where.eps Graphic file (type eps)
+
+<survey/where.eps> [37]
+File: survey/rate.eps Graphic file (type eps)
+ <survey/rate.eps> [38]
+File: survey/percent.eps Graphic file (type eps)
+ <survey/percent.eps> [39]
+Overfull \hbox (7.66196pt too wide) in paragraph at lines 125--126
+\OT1/cmr/m/n/10.95 There is cur-rently only one di-rect com-peti-tor to OS-Dig-
+ger, that is GeoCrawler.
+ []
+
+[40] [41]
+Underfull \hbox (badness 1400) in paragraph at lines 175--175
+[]\OT1/cmr/m/n/10.95 Existing Site. Large
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 175--175
+\OT1/cmr/m/n/10.95 database of mes-sages.
+ []
+
+
+Underfull \hbox (badness 4429) in paragraph at lines 175--175
+\OT1/cmr/m/n/10.95 Links with linux.com
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 175--176
+[]\OT1/cmr/m/n/10.95 Cannot search across
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
+[]\OT1/cmr/m/n/10.95 Awkward in-ter-face.
+ []
+
+
+Underfull \hbox (badness 3158) in paragraph at lines 179--180
+\OT1/cmr/m/n/10.95 Not ex-clu-sively Open
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 181--181
+[]\OT1/cmr/m/n/10.95 Extremely large, and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+[]\OT1/cmr/m/n/10.95 Only archives news-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+\OT1/cmr/m/n/10.95 groups, not mail-ing
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 181--182
+\OT1/cmr/m/n/10.95 lists. Mov-ing their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+\OT1/cmr/m/n/10.95 at-ten-tion more to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--183
+[]\OT1/cmr/m/n/10.95 Complete de-vel-op-ers
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 183--183
+\OT1/cmr/m/n/10.95 por-tal. Many ex-tra
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 183--184
+[]\OT1/cmr/m/n/10.95 Does not yet archive
+ []
+
+) [42] [43]
+Chapter 10.
+(strategy.tex
+File: banner.eps Graphic file (type eps)
+ <banner.eps> [44
+
+] [45]) [46]
+Chapter 11.
+(finance.tex [47
+
+]) [48] [49
+
+] (techbasis.tex
+Chapter 12.
+[50
+
+] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60] [61] [62] [63]
+Chapter 13.
+[64
+
+]
+Overfull \hbox (16.05586pt too wide) in paragraph at lines 522--523
+\OT1/cmr/m/n/10.95 Database Sys-tem (GOODS) and Per-sis-tent Ob-ject Stor-age f
+or C++ (POST++)
+ []
+
+[65]
+File: figures/forward.eps Graphic file (type eps)
+ <figures/forward.eps> [66]
+File: figures/inverted.eps Graphic file (type eps)
+ <figures/inverted.eps> [67] [68] [69]
+Overfull \hbox (19.41339pt too wide) in paragraph at lines 651--651
+[]       \OT1/cmtt/m/n/10.95 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transition
+al.dtd"/>[] 
+ []
+
+[70]
+Overfull \hbox (2.16733pt too wide) in paragraph at lines 681--681
+[]     \OT1/cmtt/m/n/10.95 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional
+.dtd">[] 
+ []
+
+File: figures/xmlex.eps Graphic file (type eps)
+<figures/xmlex.eps>) (techspec.tex [71]
+Chapter 14.
+File: figures/dataflow.eps Graphic file (type eps)
+<figures/dataflow.eps>
+Overfull \hbox (18.1807pt too wide) in paragraph at lines 27--45
+ [] 
+ []
+
+[72
+
+] [73] [74]
+Overfull \hbox (27.87454pt too wide) in paragraph at lines 100--107
+ [] 
+ []
+
+[75]) (software.tex [76]
+Chapter 15.
+[77
+
+]
+Overfull \hbox (1.40042pt too wide) in paragraph at lines 50--82
+ [] 
+ []
+
+[78] [79] [80] [81] [82]
+Overfull \hbox (25.1621pt too wide) in paragraph at lines 180--180
+[][]     \OT1/cmtt/m/n/10.95 // Only accept words greater than 2 and less than 
+15 letters[] 
+ []
+
+[83]
+Overfull \hbox (7.91603pt too wide) in paragraph at lines 228--228
+[][]     \OT1/cmtt/m/n/10.95 qsort(set, numterms, sizeof(struct searchset *), c
+ompar);[] 
+ []
+
+
+Overfull \hbox (59.65422pt too wide) in paragraph at lines 257--257
+[][]       \OT1/cmtt/m/n/10.95 *results = realloc(*results, numresults * sizeof
+(struct score));[] 
+ []
+
+[84]
+Overfull \hbox (19.4134pt too wide) in paragraph at lines 280--280
+[][]   \OT1/cmtt/m/n/10.95 qsort(*results, numresults, sizeof(struct score), re
+scompar);[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
+
+ []
+
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 305--307
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--314
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--326
+
+ []
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 336--338
+
+ []
+
+) (maintman.tex [87]
+Chapter 16.
+[88
+
+] [89]) [90] [91
+
+] (operations.tex
+Chapter 17.
+[92
+
+]
+Chapter 18.
+[93
+
+]
+Chapter 19.
+) [94
+
+] [95
+
+] (review.tex
+Chapter 20.
+[96
+
+]
+Chapter 21.
+) (thesis.bbl [97
+
+] [98
+
+]
+Overfull \hbox (30.47433pt too wide) in paragraph at lines 123--125
+[]\OT1/cmr/m/n/10.95 Google af-fil-i-ate pro-grams.  http://www.google.com/webs
+earch[]programs.html. 
+ []
+
+[99]
+Underfull \hbox (badness 1033) in paragraph at lines 206--209
+[]\OT1/cmr/m/n/10.95 W3C Rec-om-men-da-tion.  Ex-tenis-ble markup lan-guage (xm
+l) 1.0.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--214
+[]\OT1/cmr/m/n/10.95 W3C Rec-om-men-da-tion.  Xsl tran-sor-ma-tions (xslt) 1.0.
+
+ []
+
+[100] [101]) [102] (thesis.aux) ) 
+Here is how much of TeX's memory you used:
+ 1152 strings out of 10901
+ 13460 string characters out of 72377
+ 65963 words of memory out of 263001
+ 4055 multiletter control sequences out of 10000+0
+ 11650 words of font info for 41 fonts, out of 400000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 32i,9n,21p,1178b,434s stack positions out of 300i,100n,500p,50000b,4000s
+
+Output written on thesis.dvi (109 pages, 246820 bytes).

@@ -1,0 +1,45 @@
+ ** 10+ ** user ** 0-10 ** week ** proj ** 5 ** 5 ** 3 ** 1 ** 1 ** Shared anonymous IMAP folders (ala Cyrus) would be awesome. Thats what I do now for all my mailing lists, so everyone in my company can access them. Reduces storage space and bandwidth appreciably.
+ ** 0 ** user ** 0 ** month ** proj ** 3 ** 2 ** 5 ** 5 ** 4 ** 
+ ** 0-5 ** user ** 0 ** week ** deja ** 5 ** 5 ** 3 ** 2 ** 2 ** Mailing list digests are what the doctor ordered.
+194.83.240.29 ** 0-5 ** user ** 0 ** month ** proj ** 5 ** 5 ** 1 ** 2 ** 3 ** For info: I subscribe to linux-kernel and samba-ntdom
+195.10.240.2 ** 0 ** devel ** 0 ** never **  ** 5 ** 5 ** 2 ** 3 ** 4 ** 
+137.222.120.105 ** 5-10 ** devel ** 0-10 ** week ** proj ** 5 ** 5 ** 1 ** 1 ** 1 ** Don't overlook Python
+137.222.34.107 ** 0-5 ** devel ** 0 ** week ** proj ** 5 ** 4 ** 1 ** 1 ** 3 ** 
+193.159.84.123 ** 10+ ** devel ** 10-30 ** never ** proj ** 5 ** 1 ** 1 ** 1 ** 1 ** I keep my own mail-archive of the lists I'm subscribed to, so I only need the mails of dates when I haven't been subscribed yet.
+194.82.103.38 ** 0-5 ** devel ** 0-10 ** month ** proj ** 5 ** 5 ** 1 ** 4 ** 1 ** 
+212.49.235.199 ** 0-5 ** devel ** 0-10 ** week ** proj ** 5 ** 5 ** 5 ** 2 ** 4 ** 
+216.88.157.130 ** 5-10 ** user ** 0 ** week ** proj ** 5 ** 4 ** 2 ** 3 ** 4 ** 
+128.125.38.171 ** 10+ ** devel ** 30+ ** month ** proj ** 5 ** 5 ** 5 ** 5 ** 3 ** 
+130.234.125.36 ** 0-5 ** user ** 0-10 ** month ** proj ** 5 ** 4 ** 1 ** 3 ** 3 ** 
+137.56.0.67 ** 0-5 ** devel ** 0-10 ** week ** proj ** 4 ** 4 ** 5 ** 2 ** 3 ** good luck on the project :) B.vangils@kub.nl
+24.115.66.192 ** 5-10 ** devel ** 0-10 ** month ** proj ** 5 ** 3 ** 2 ** 3 ** 3 ** 
+24.131.48.165 ** 0-5 ** devel ** 0-10 ** week ** proj ** 3 ** 4 ** 2 ** 3 ** 3 ** 
+212.242.40.131 ** 10+ ** devel ** 30+ ** week ** proj ** 5 ** 5 ** 1 ** 1 ** 3 ** 
+24.132.72.194 ** 5-10 ** user ** 0-10 ** day ** 3rd ** 5 ** 5 ** 4 ** 3 ** 4 ** 
+128.233.128.23 ** 10+ ** devel ** 0-10 ** week ** proj ** 5 ** 4 ** 1 ** 1 ** 3 ** 
+216.224.192.252 ** 5-10 ** devel ** 10-30 ** month ** proj ** 2 ** 2 ** 5 ** 3 ** 2 ** 
+129.22.237.63 ** 5-10 ** user ** 0-10 ** week  ** 3rd ** 5 ** 5 ** 1 ** 1 ** 1 ** 
+137.222.34.108 ** 0-5 ** devel ** 0 ** month ** proj ** 5 ** 5 ** 4 ** 3 ** 4 ** 
+169.207.75.180 ** 0-5 ** user ** 0-10 ** week ** deja ** 5 ** 3 ** 3 ** 1 ** 1 ** 
+24.128.136.227 ** 10+ ** devel ** 30+ ** day ** 3rd ** 5 ** 5 ** 1 ** 2 ** 1 ** A good archive site would have an anonymous IMAP interface so one could point ones own mail reader at it to manage threads, respond to messages, etc.
+130.225.236.8 ** 5-10 ** devel ** 10-30 ** week ** deja ** 5 ** 4 ** 2 ** 4 ** 4 ** I recommend a site that´s simple and gets to the point. Also don´t have too many banners...
+193.224.40.11 ** 5-10 ** user ** 0-10 ** week ** proj ** 5 ** 5 ** 3 ** 1 ** 4 ** 
+195.17.73.46 ** 10+ ** user ** 0 ** week ** deja ** 5 ** 3 ** 1 ** 1 ** 1 ** 
+196.15.192.194 ** 10+ ** devel ** 30+ ** day ** proj ** 4 ** 2 ** 1 ** 1 ** 2 ** 
+210.94.6.83 ** 10+ ** devel ** 0-10 ** day ** proj ** 5 ** 4 ** 2 ** 3 ** 2 ** 
+24.12.197.197 ** 0-5 ** user ** 0-10 ** month ** proj ** 5 ** 3 ** 5 ** 3 ** 3 ** 
+216.126.137.16 ** 10+ ** devel ** 30+ ** week ** proj ** 5 ** 5 ** 1 ** 2 ** 1 ** ability to download a Berkeley mailbox format of the archive
+63.192.213.131 ** 10+ ** devel ** 10-30 ** month ** proj ** 5 ** 5 ** 1 ** 4 ** 2 ** http://www.google.com/bsd http://www.google.com/linux
+137.222.102.226 ** 0 ** devel ** 0 ** month ** proj ** 5 ** 4 ** 1 ** 2 ** 3 ** 
+194.83.240.40 ** 10+ ** devel ** 10-30 ** week ** proj ** 5 ** 3 ** 1 ** 1 ** 1 ** 
+195.173.57.159 ** 5-10 ** devel ** 0-10 ** month ** proj ** 5 ** 1 ** 1 ** 1 ** 2 ** 
+195.8.84.143 ** 5-10 ** user ** 0-10 ** week ** proj ** 5 ** 5 ** 5 ** 5 ** 5 ** 
+210.164.96.158 ** 5-10 ** devel ** 0-10 ** day ** proj ** 4 ** 3 ** 1 ** 1 ** 1 ** 
+212.49.246.182 ** 0-5 ** devel ** 0-10 ** month ** proj ** 5 ** 5 ** 1 ** 1 ** 1 ** 
+137.208.7.48 ** 10+ ** devel ** 10-30 ** day ** deja ** 5 ** 5 ** 2 ** 4 ** 4 ** 
+24.108.12.97 ** 0-5 ** user ** 0-10 ** day ** proj ** 5 ** 5 ** 5 ** 2 ** 3 ** 
+62.157.74.21 ** 0-5 ** user ** 0 ** month ** proj ** 4 ** 4 ** 2 ** 2 ** 2 ** 
+130.225.19.182 ** 0 ** devel ** 0 ** week ** proj ** 5 ** 4 ** 4 ** 3 ** 2 ** 
+195.8.87.87 ** 0-5 ** user ** 0-10 ** week **  ** 4 ** 2 ** 5 ** 3 ** 1 ** 
+194.82.103.41 ** 0-5 ** devel ** 0-10 ** week ** 3rd ** 5 ** 5 ** 5 ** 3 ** 3 ** 
+194.168.50.50 ** 5-10 ** devel ** 0-10 ** week ** proj ** 4 ** 3 ** 3 ** 4 ** 4 ** 

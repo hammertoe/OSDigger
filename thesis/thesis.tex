@@ -1,0 +1,108 @@
+%% $Id: thesis.tex,v 1.11 2000/05/14 23:09:32 matt Exp $
+
+\documentclass[a4paper,11pt]{report}
+
+\usepackage{html}
+\usepackage{epsfig}
+\usepackage{supertabular}
+\usepackage{moreverb}
+
+\pagestyle{headings}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+  University of Bristol - Department of Computer Science \\
+  \vskip .3cm
+  \hrule
+\begin{htmlonly}
+  \vspace*{0.5cm}
+  \htmladdimg[ALIGN=CENTER]{http://www.cs.bris.ac.uk/.logo.png}
+  \vspace*{1cm}
+\end{htmlonly}
+\begin{latexonly}
+  \vspace*{3cm}
+\end{latexonly}
+  {\LARGE COMS40110/1 - Individual Project}\\
+  \vskip .5cm
+  \vskip 1cm
+  \rule{4cm}{0.1mm}\\
+  \vskip .75cm
+  {\Large OSDigger} \\
+  \vskip .25cm
+  {\large Open Source Mailing List Archive} \\
+  \vskip .25cm
+  \today \\
+  \vskip .75cm
+  \rule{4cm}{0.1mm}\\
+\vskip 1cm
+  Matthew HAMILTON\\
+  \vskip .25cm
+  \texttt{mh6225@bris.ac.uk}\\
+  \vskip 5cm
+Project Thesis submitted in support of the degree of Master of Engineering in Computer Science
+
+\end{center}
+\end{titlepage}
+
+
+\newpage
+\tableofcontents
+\newpage
+
+% block paragraphs
+\parskip=0.5\baselineskip \advance\parskip by 0pt plus 2pt
+\parindent=0cm
+
+
+\input{abstract}
+
+\part{Specification and Design}
+\input{require}
+\input{initspec}
+\input{risk}
+\input{prototype}
+
+\part{Planning}
+\input{projplan}
+
+\part{Business Plan}
+\chapter{Executive Summary}
+\input{execsum}
+
+\chapter{The Business and Its Management}
+\input{business}
+
+\chapter{Products}
+\input{products}
+
+\chapter{Market and Competitors}
+\input{market}
+
+\chapter{Competetive Business Strategy}
+\input{strategy}
+
+\chapter{Forcasts and Financial Data}
+\input{finance}
+
+
+\part{Implementation}
+%\input{userman}
+\input{techbasis}
+\input{techspec}
+\input{software}
+\input{maintman}
+
+\part{Operations}
+\input{operations}
+
+\part{Project Review}
+\input{review}
+
+\appendix
+\addcontentsline{toc}{part}{References}
+\bibliographystyle{plain}
+\bibliography{report}
+
+\end{document}

@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (Web2C 7.3.1)
+The top-level auxiliary file: thesis.aux
+The style file: plain.bst
+Database file #1: report.bib
+Warning--empty note in edleno98:comppatmat
+Warning--empty note in gasieniec99:optlzwpat
+Warning--empty note in navraf99:patzif
+Warning--empty note in zhihong98:_hardw_softw_balan_act_infor
+Warning--empty note in LuCallanCroft91:infer_nets
+Warning--empty note in luMcK:Search_tera_repli
+You've used 65 entries,
+            2118 wiz_defined-function locations,
+            774 strings with 11035 characters,
+and the built_in function-call counts, 14794 in all, are:
+= -- 1339
+> -- 661
+< -- 3
++ -- 279
+- -- 204
+* -- 702
+:= -- 2372
+add.period$ -- 149
+call.type$ -- 65
+change.case$ -- 306
+chr.to.int$ -- 0
+cite$ -- 71
+duplicate$ -- 520
+empty$ -- 1422
+format.name$ -- 204
+if$ -- 3187
+int.to.chr$ -- 0
+int.to.str$ -- 65
+missing$ -- 14
+newline$ -- 282
+num.names$ -- 106
+pop$ -- 523
+preamble$ -- 1
+purify$ -- 244
+quote$ -- 0
+skip$ -- 540
+stack$ -- 0
+substring$ -- 460
+swap$ -- 77
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 252
+warning$ -- 6
+while$ -- 118
+width$ -- 67
+write$ -- 552
+(There were 6 warnings)

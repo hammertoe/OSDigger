@@ -1,0 +1,93 @@
+%% $Id: require.tex,v 1.8 2000/05/08 16:21:12 matt Exp $
+
+\chapter{User Requirements}
+\label{require}
+\section{The Customer}
+Etherworks, a startup, Bristol based company has been formed by the
+author and several University of Bristol graduates.  The aim of the
+company is to setup a web based archive of Open Source Software
+\cite{www:opensource} electronic mailing lists.  The founders of the company 
+have collectively put up the money for capital.  So far this capital has been used to purchase a server to develop and host the archive on.  Revenue is expected to be generated via advertising on the site once it is established.
+
+The work completed for this project will comprise mainly of the backend systems to operate the archive.  The other members of Etherworks will be working on the web site design, graphics and administrative tools.  These are not to be considered as part of this project.
+
+\section{Motivation}
+Much of the development of Open Source software is discussed on mailing
+lists.  There are hundreds of these lists covering various topics to do
+with the use and development of the software.  The main essence of
+Open Source software is communication between the community developing the
+software.  
+
+Most of these lists are not archived in any way, and the
+archives that do exist only offer very basic searching and browsing
+functions.  Due to the computationally expensive nature of searching
+through large archives, most of the archives only allow the user to search
+through a single subsection at a time.
+
+Many of the questions asked on the lists have often been previously asked,
+and more importantly answered.  What is needed is a single central archive
+of the various lists, which users can search through to find what they are
+looking for.
+
+This site has the potential to be a very valuable resource used by
+both developers and users of all levels.
+
+Nothing like this at this scale currently exists on the internet.
+There are quite a few smaller sites that archive multiple lists, but
+none with a site-wide search facility.
+
+Many web search engines, such as AltaVista and Infoseek,  also sell
+their indexing and search software as a separate standalone commercial
+product.  However this software is geared towards indexing web sites
+and not mailing lists.
+
+\section{Requirements}
+In order to set this archive apart from other similar sites on the net
+it will have to offer much larger capacity and more advanced features:
+
+\subsection*{Capacity}
+The archive will have to be able to handle the storage, retrieval,
+and searching of millions of messages.  It must be capable of handling 
+several simultaneous users a second visiting the site without
+significant slowdown.
+
+\subsection*{Scalability}
+As the service become more popular and the load increases, it should be  
+possible to split the components of the archive up to run on seperate
+servers.  This should increase the capacity that can be handled by the
+archive.
+
+\subsection*{Near Real-Time}
+The archive must make messages available for browsing as soon as they
+arrive.  The search indexes must be updated regularly, at least once a 
+day, so that searches return recent messages. 
+
+\subsection*{Browsing}
+Users must be able to easily and efficiently browse the archive and
+see the most recently sent messages of a particular list.  They must
+be able view the individual messages and move to next and previous
+messages in the message's thread. 
+
+\subsection*{Searching}
+The site must allow users to search through the archives of messages
+for keywords. They must be able to search across all lists held or
+just a select set of lists.  The results must be ranked by relevance
+and must be returned within a couple of seconds.
+
+\subsection*{Customisation}
+The site must be customisable by the users.  They must be able
+personalise various aspects of the site, such as default searches,
+time and date formats, number of messages per screen to show.
+
+\subsection*{Cost}
+Etherworks are supplying a server to develop the site and software
+on.  The server should be sufficient to run the full site once opened
+to the public for the first couple of months.  The only major cost
+anticipated will be the cost of co-locating the server at an ISP once
+the site goes commercial.
+
+\subsection*{Advertising Space}
+The site is expected to generate revenue through advertisements placed on the 
+site.  Therefore the site must be designed in such a way to accommodate various standard sized banner ads.
+
+% LocalWords:  Etherworks Opensource internet AltaVista Infoseek co ISP

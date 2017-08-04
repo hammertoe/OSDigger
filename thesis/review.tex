@@ -1,0 +1,20 @@
+%% $Id: review.tex,v 1.2 2000/05/14 23:09:32 matt Exp $
+
+\chapter{Project Review}
+
+The project has been a very valuable experience.  One of the main aspects that I have learned the most from has been the Business Plan.  This is a real venture that I am working on, and although I know what I am trying to do, it has been a great challenge to try an articulate this to a business audience.  On the one hand I have been reading in-depth papers into the latest Information Retrieval algorithms.  On the other hand I have been trying to convince an investor that the Return on Investment is high enough and that a market exists for the product.
+
+This wide range of tasks has broadened my experience considerably.  I have already tried to take the idea to a Bank Manager to ask for a loan, but the ratio of loan capital to investment capitol was too high.  This forced me to look at the business plan again and work out how we could re-finance it in a better way.  I now feel confident to try again and see if we can get the loan!
+
+During the development I changed directions quite a few times, and there was parallel development of both a Java and C version of the Indexers for quite a while.  There seems to be no one simple perfect solution and as with most things in life a mix is needed.  I learned a great deal from the many different partial solutions I tried to develop.  Many of them did not prove satisfactory, but I learnt as much from the ideas that did not work as I did from the ideas that did.
+
+Information Retrieval is a very wide topic, and many of the ideas proposed in the papers I have read make most existing search engines seem extremely primitive.  I would like to take some of these ideas further and implement them in a production system. 
+
+\chapter{Future Work}
+
+\section{Tilebars}
+
+\section{LSI}
+Latent Semantic Indexing (LSI) is described earlier and is a way of automatically building up associations between related words.  The Twostep search process currently implemented in OSDigger uses a similar method to find related terms to a search query.  The method currently used works out the related terms on the fly, however it would be possible to batch process the entire collection to precompute this.  Since the relationships between words is unlikely to change in the short term the mappings would not need to be updated that often.  As it is not being computed in real time, much more sophisticated techniques could be used, such as using the spacing between terms -- terms closer together are more likely to be related than terms further apart.
+
+% LocalWords:  Tilebars LSI Twostep OSDigger precompute

@@ -1,0 +1,151 @@
+# $Id: schedule,v 1.2 1999/12/17 16:48:09 matt Exp $
+
+startdate 1999 07 01
+dateformat calendar
+
+tg_width 2
+tg_sortbyresource
+tg_nodays
+show_task_notes
+
+taskgraph 1999.Oct.01 2000.Jun.30  gantt.eps
+texreport tasks.tex
+
+resource Matt "Matt Hamilton"
+resource Tim "Tim Saigol"
+resource ChrisG "Chris Green"
+resource ChrisP "Chris Parsons"
+group All ChrisG ChrisP Tim Matt
+
+vacation * 1999.Dec.21 2000.Jan.05
+
+task cr "Customer Requirements" 10
+complete cr 100
+candidate cr Matt
+past cr Matt 1999.Oct.04 1999.Oct.15
+describe cr "The other members of Etherworks and the Open Source community as a whole were asked for what they thought was required of the service."
+
+task is "Initial Specification" 5
+depends is cr
+complete is 100
+candidate is Matt
+past is Matt 1999.Oct.18 1999.Oct.22
+describe is "An overall structure for the archive was devised and the principle components marked out.  This will later be expanded into the Technical Specification"
+
+task pr "Prototype" 20
+depends pr cr
+complete pr 100
+candidate pr Matt
+past pr Matt 1999.Nov.01 1999.Nov.26
+describe pr "A prototype was built to test if the idea is feasible.  The prototype was written in C and specifically tested the speed and scalability of the compression algorithms found in \cite{wmb:mg}."
+
+task ra "Risk Analysis" 5
+depends ra is
+complete ra 100
+candidate ra Matt
+finish ra 1999.Dec.17
+describe ra "The main risks that could cause the project to fail or not be completed on time were predicted. Their probability of occurrence and consequences as well as what could be done to reduce this risk were estimated."
+
+
+task ws "Design Web Site Layout" 80
+candidate ws ChrisP
+start ws 2000.Jan.10
+#complete ws 10
+describe ws "Chris Parsons will be working on designing the final web site layout.  He will be coding the needed HTML and calling the backend scripts that will be written as part of this project."
+
+task wg "Design Web Site Graphics" 80
+candidate wg ChrisG
+start wg 2000.Jan.10
+#complete wg 20
+describe wg "Chris Green will be designing the graphics for the web site and deciding the overall look and feel of the site."
+
+task at "Design Admin Site Tools" 80
+candidate at Tim
+start at 2000.Jan.10
+describe at "Tim Saigol will be designing administrative tools that will be needed for the day-to-day running of the archive once we launch."
+
+task ts "Technical Specification" 10
+depends ts ra
+#complete ts 20
+candidate ts Matt
+start ts 2000.Jan.10
+describe ts "The Technical Specification will contain the exact design of the backend components for the archive.   The coding of the end product will be based upon this document and will be useful for anybody else wanting to modify the code."
+
+task db "Design DB Structure" 3
+depends db ts
+candidate db Matt
+describe db "The messages will be stored in a database, the structure of which needs to be designed.  The database will also hold information such as user preferences and administravia."
+
+task cp "Coding Parser" 14
+depends cp db
+#complete cp 0
+candidate cp Matt
+describe cp "The parser that decodes messages and inserts the into the database will be coded"
+
+task tp "Test Parser" 5
+depends tp cp
+#complete tp 0
+candidate tp Matt
+describe tp "Testing of the parser will involve subscribing to many mailing lists and testing to see if the parser can parse all of the messages."
+
+task ci "Code Indexer" 14
+depends ci tp
+candidate ci Matt
+describe ci "The indexer that fetches messages from the database and produces the index files used by the Query Server will be written."
+
+task ti "Test Indexer" 5
+depends ti ci
+candidate ti Matt
+describe ti "The indexer will be tested and profiled to make sure it is fast enough.  It is expected that there will be quite a few refinements of the code to try and squeeze as much speed as possible out of the indexer.  This task will also involve coding a decoder to make sure that the indexes produced are valid."
+
+task cq "Code Query Server" 14
+depends cq db
+candidate cq Matt
+describe cq "The daemon that accepts queries from the web server will be coded."
+
+task tq "Test Query Server" 5
+depends tq cq
+candidate tq Matt
+describe tq "Testing the Query Server will involve creating sample scripts to submit queries to the Query Server and time response times."
+
+task cbs "Code Web Scripts" 14
+depends cbs db
+candidate cbs Matt
+describe cbs "These scripts will form a library or module with functions to submit queries, and retrieve list indexes and messages.  They will be called by the web pages being designed by Chris Parsons."
+
+task tbs "Test Web Scripts" 5
+depends tbs cbs
+candidate tbs Matt
+describe tbs "The scripts will be tested with some simple HTML pages to make sure they work correctly.  At this point we should have all of the functionality of the archive implemented."
+
+task bit "Backend Integration Testing" 10
+depends bit tbs tq ti
+candidate bit Matt
+describe bit "All of the backend components will be tested together to make sure that they work correctly with each other."
+
+task fit "Frontend Integration Testing" 10
+depends fit ws wg at
+candidate fit ChrisP
+describe fit "The graphics, HTML and scripts will be tested together to ensure a consistent look and feel across the site and that the site works under different web browsers and at different connection speeds."
+
+task beta "Beta Test" 5
+depends beta fit bit
+candidate beta All
+#start beta 2000.Jun.01
+describe beta "Selected groups of people will be asked to test the site and let us know what they think.  Any changes and improvements will be made at this time.  We will also do synthetic load benchmarks to see how the server will handle heavy loads and realistically how many concurrent users we can support."
+
+task launch "Archive Site Launch" 1
+depends launch beta
+candidate launch All
+#start beta 2000.Jun.01
+describe launch "Launch the site!  We will advertise the site on various other web sites and discussion forums and try and get as much interest as possible."
+
+task wr "Thesis Writeup" 20
+candidate wr Matt
+depends wr launch
+describe wr "The remaining parts of the this thesis will be written up.  Also a complete business plan will be written to project where we go from the end of the project."
+
+# LocalWords:  matt Exp startdate dateformat tg sortbyresource nodays taskgraph
+# LocalWords:  Oct Jun gantt eps texreport tex Saigol ChrisG ChrisP cr pr Nov mg
+# LocalWords:  wmb ws HTML backend wg Admin ts db administravia cp tp ci cq tq
+# LocalWords:  cbs tbs Frontend wr Writeup
